@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test" parallel="false">
+
+	<parameter name="env" value="${env}"></parameter>
+
+	<!-- <listeners> <listener class-name="listenerConfig.ExtentListener" /> 
+		</listeners> -->
+
+	<test name="Run on device emulator-5554">
+		<classes>
+			<class name="SignIn.SignInTest" />
+		</classes>
+	</test>
+
+</suite> 
